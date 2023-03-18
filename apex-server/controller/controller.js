@@ -1,4 +1,5 @@
-const Item = require("../model/model");
+const path = require("path");
+const Item = require("../models/itemSchema");
 
 exports.addItem = async (req, res) => {
   try {
@@ -10,9 +11,9 @@ exports.addItem = async (req, res) => {
   } catch (err) {
     if (err.name === "ValidationError") {
       const messages = Object.values(err.errors).map((val) => val.message);
-      console.log(req.body);
       return res.status(400).json({
         success: false,
+        data: req.body,
         error: messages,
       });
     } else {

@@ -22,7 +22,7 @@ const itemSchema = new mongoose.Schema({
   },
   supplier: {
     type: String,
-    required: [true, "spllier name or link is not specified"],
+    required: [true, "supplier name or link is not specified"],
   },
   recurring: {
     type: String,
@@ -39,4 +39,4 @@ const itemSchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model("item", itemSchema);
+module.exports = mongoose.model("Item", itemSchema);
