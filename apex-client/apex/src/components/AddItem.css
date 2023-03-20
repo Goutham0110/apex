@@ -1,0 +1,51 @@
+/*
+#867070
+#D5B4B4
+#E4D0D0
+#F5EBEB
+*/
+
+.AddItem-container{
+    display: flex;
+    justify-content: center;
+}
+
+.AddItem{
+    background-color:#D5B4B4 ;
+    padding: 20px 40px 20px 40px;
+    width: auto;
+    border-radius: 20px;
+    margin: 10px 10px 20px 10px;
+}
+
+.AddItem h2{
+    color: #F5EBEB;
+    border: 2px solid red;
+}
+
+.AddItem form{
+    border: 2px solid red;
+}
+
+.AddItem .form-attribute{
+    display: flex;
+    padding: 8px;
+    justify-content: right;
+}
+
+.AddItem .form-attribute input{
+    padding-left: 5px;
+    margin-left: 7px;
+    border-radius: 7px;
+    border-style: none;
+}
+
+.AddItem .add-button input{
+    background-color: #867070;
+    padding: 7px 14px 7px 14px;
+    margin-top: 10px;
+    border-radius: 7px;
+    font-size: 14px;
+    color: #E4D0D0;
+    border-style:none;
+}
