@@ -1,14 +1,22 @@
-import React from 'react';
+import React, {createContext,useContext, useState} from 'react';
 import Header from './Header';
 import AddItem from './AddItem';
 import List from './List';
+import './ListPage.css'
+
+export const ListContext=createContext([{quantity:2, unitPrice:200, itemName:"iphone 24"}]);
 
 function ListPage(){
-    return(<div>
+    const [items,setItems]=useState([]);
+
+    return(
+    <div className='list-page'>
         <Header/>
-        <AddItem/>
-        <List />
-    </div>)
-}
+        <ListContext.Provider value={items}>
+            <AddItem onAdd={setItems} items={items}/>
+            <List/>
+        </ListContext.Provider>
+    </div>
+    )}
 
 export default ListPage;

@@ -7,4 +7,13 @@
 
 .list{
     background-color: #E4D0D0;
+    border-radius: 20px;
+    min-height:250px;
+    min-width: 250px;
+    padding: 20px;
+    margin:20px 60px 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border:2px solid #D5B4B4;
 }

@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Item from './Item';
 import './List.css'
+import { ListContext } from './ListPage';
+
 
 function List(){
+    const items=useContext(ListContext);
+
     return(<div className='list'>
-        List
-        <Item/>
+        {items.map((itemData)=> <Item itemData={itemData}/>)}
     </div>)
 }
 

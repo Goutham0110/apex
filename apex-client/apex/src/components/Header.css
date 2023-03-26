@@ -5,13 +5,19 @@
 #F5EBEB
 */
 
+
+
 .container{
     display:flex;
     background-color:#E4D0D0;
     justify-content: space-evenly;
     padding: 20px;
-    margin: 20px 100px 20px 100px;
+    margin: 20px 10% 20px 10%;
     border-radius: 12px;
+    width:60%;
+    /*border: 2px solid #a8a8bf;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 15px 0 rgba(0, 0, 0, 0.19); */
+
 }
 
 .logo{
