@@ -1,0 +1,47 @@
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    border-radius: 12px;
+    width:70%;
+    padding:0px 20px;
+    margin-bottom: 40px;
+    background-color:#E4D0D0;
+    border:2px solid #D5B4B4;
+}
+
+.footer .counter-text{
+    font-size: 17px;
+    padding: 7px 12px;
+    border-radius: 15px;
+    background-color: #D5B4B4;
+}
+
+.counter{
+    display: inline-flex;
+    background-color: #fff;
+    padding: 3px;
+    border-radius: 4px;
+    height: 16px;
+    align-items: center;
+    font-size: 16px;
+    font-weight:500 ;
+}
+
+.total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 7px;
+    border-radius: 9px;
+    background-color: #D5B4B4;
+}
+
+.total-price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7px;
+    margin-bottom: 7px;
+    background-color: #fff;
+}
